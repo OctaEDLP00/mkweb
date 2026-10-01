@@ -1,7 +1,7 @@
 # AGENTS.md — mkweb-go-cli
 
-CLI en Go (Cobra) que genera proyectos web. Spec de arquitectura en `INFO.md`;
-comportamiento de referencia en `~/Escritorio/Dev/mkweb.sh` (fuera del repo).
+CLI en Go (usando Cobra) que genera proyectos web. Spec de arquitectura en `INFO.md`;
+comportamiento de referencia en `./mkweb.sh`.
 
 ## Verificar
 
@@ -44,9 +44,7 @@ go test ./...    # hoy no hay tests; hay skills go en skills-lock.json si agreg�
 
 ## Convenciones y trampas
 
-- Nombres de archivo con typo que se conservan a propósito:
-  `internal/ui/pompt.go`. No lo renombres.
-- `internal/ui/pompt.go` usa un único `bufio.Reader` compartido sobre stdin.
+- `internal/ui/prompt.go` usa un único `bufio.Reader` compartido sobre stdin.
   No crees un reader por prompt: el primero buferiza input del segundo y el modo
   interactivo pierde respuestas. El selector (`selector.go`) lee de ese mismo reader.
 - `internal/ui/selector.go` implementa el selector ↑/↓ con `stty raw` (stdlib, sin
