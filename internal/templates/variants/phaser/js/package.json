@@ -1,0 +1,20 @@
+{
+  "name": "{{.ProjectName}}",
+{{if .PackageManager}}  "packageManager": "{{.PackageManager}}",
+{{end}}  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "vite": "latest"
+  },
+  "dependencies": {
+    "phaser": "latest"
+  }
+}

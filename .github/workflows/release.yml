@@ -1,0 +1,36 @@
+name: Release
+
+# Publica binarios descargables: pushear un tag `v*` crea el GitHub Release
+# con mkweb para linux/darwin/windows (amd64/arm64) + checksums.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - run: mkdir -p dist
+      - run: |
+          TAG="${GITHUB_REF_NAME}"
+          for os in linux darwin windows; do
+            for arch in amd64 arm64; do
+              out="dist/mkweb-${TAG}-${os}-${arch}"
+              [ "$os" = windows ] && out="${out}.exe"
+              GOOS=$os GOARCH=$arch go build \
+                -ldflags "-X mkweb/internal/config.Version=${TAG}" \
+                -o "$out" .
+            done
+          done
+      - run: cd dist && sha256sum * > SHA256SUMS.txt
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true
