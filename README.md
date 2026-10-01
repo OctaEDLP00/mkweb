@@ -47,7 +47,18 @@ mkweb version                             # versión del CLI
 mkweb completion bash                     # autocompletado (bash|zsh|fish|powershell)
 ```
 
-Gestores aceptados (`--pm`/`-p`): `pnpm npm yarn bun nube nub utoo upm`.
+## Gestores (`--pm`/`-p`)
+
+| Gestores    |       |
+|--------------|------|
+| `pnpm`    | ✅ |
+| `npm` | ✅ |
+| `yarn`     | ✅ |
+| `bun`  | ✅ |
+| `nube`  | ✅ |
+| `nub`  | ✅ |
+| `utoo`  | ✅ |
+| `upm`  | ✅ |
 
 El `package.json` generado incluye `"packageManager": "<pm>@<semver>"` con la
 versión **instalada** (`<pm> --version`; para `npm` refleja el npm del Node
