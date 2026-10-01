@@ -9,7 +9,7 @@ Requiere Go (ver versión en `go.mod`).
 ## Instalación
 
 ```sh
-go install github.com/OctaEDLP00/mkweb@v0.1.1   # última release (como cobra)
+go install github.com/OctaEDLP00/mkweb@v0.1.1   # última release 
 # o compilar local:
 go build -o mkweb .
 make build
@@ -70,7 +70,9 @@ preguntar; sin flags no se instala nada):
 Tras generar el proyecto (o si elegiste instalar, solo arrancar):
 
 ```sh
-cd mi-app && npm install && npm run dev   # con el gestor que elegiste
+cd mi-app \
+npm install \
+npm run dev   # con el gestor que elegiste
 ```
 
 ## Plantillas
