@@ -93,6 +93,16 @@ cd mi-app && npm install && npm run dev   # con el gestor que elegiste
 
 Para agregar una tecnología nueva, ver `AGENTS.md` (sección Plantillas).
 
+## Commits
+
+Los mensajes siguen Conventional Commits (`<tipo>[scope][!]: <asunto>` con
+`feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert`).
+`scripts/commit-lint.sh` los valida; instalalo como hook:
+
+```sh
+./scripts/commit-lint.sh --install
+```
+
 ## Desarrollo
 
 ```sh

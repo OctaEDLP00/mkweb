@@ -52,4 +52,6 @@ go test ./...    # hoy no hay tests; hay skills go en skills-lock.json si agreg�
 - `internal/ui/selector.go` implementa el selector ↑/↓ con `stty raw` (stdlib, sin
   deps): solo corre con TTY en stdin, si no cae a texto. Enter confirma, q/Ctrl+C
   cancela (propaga el error, no hace fallback). `setRawMode` restaura con `defer`.
+- Commits en formato Conventional Commits, validados por `scripts/commit-lint.sh`
+  (instalable como hook con `--install`).
 - Comentarios del código en español; mantener el idioma.
