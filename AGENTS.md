@@ -1,6 +1,6 @@
 # AGENTS.md — mkweb-go-cli
 
-CLI en Go (usando Cobra) que genera proyectos web. Spec de arquitectura en `INFO.md`;
+CLI en Go (usando Cobra) que genera proyectos web. Spec de arquitectura en `SPEC.md`;
 comportamiento de referencia en `./mkweb.sh`.
 
 ## Verificar
