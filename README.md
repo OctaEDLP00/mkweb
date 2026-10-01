@@ -9,11 +9,11 @@ Requiere Go (ver versión en `go.mod`).
 ## Instalación
 
 ```sh
+go install github.com/OctaEDLP00/mkweb@v0.1.1   # última release (como cobra)
+# o compilar local:
 go build -o mkweb .
-# o
 make build
-# o instalar en $GOPATH/bin
-make install
+make install   # go install . → $GOPATH/bin
 ```
 
 También hay binarios precompilados en la pestaña Releases del repo

@@ -3,8 +3,8 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"mkweb/internal/templates"
-	"mkweb/internal/ui"
+	"github.com/OctaEDLP00/mkweb/internal/templates"
+	"github.com/OctaEDLP00/mkweb/internal/ui"
 )
 
 var listCmd = &cobra.Command{

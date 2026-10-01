@@ -5,10 +5,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"mkweb/internal/generator"
-	"mkweb/internal/pm"
-	"mkweb/internal/templates"
-	"mkweb/internal/ui"
+	"github.com/OctaEDLP00/mkweb/internal/generator"
+	"github.com/OctaEDLP00/mkweb/internal/pm"
+	"github.com/OctaEDLP00/mkweb/internal/templates"
+	"github.com/OctaEDLP00/mkweb/internal/ui"
 )
 
 var (

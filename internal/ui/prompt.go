@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"mkweb/internal/pm"
-	"mkweb/internal/templates"
+	"github.com/OctaEDLP00/mkweb/internal/pm"
+	"github.com/OctaEDLP00/mkweb/internal/templates"
 )
 
 // PromptTemplate pregunta la plantilla (equivale a prompt_template() en

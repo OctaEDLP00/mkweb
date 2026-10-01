@@ -1,4 +1,4 @@
-module mkweb
+module github.com/OctaEDLP00/mkweb
 
 go 1.27.1
 

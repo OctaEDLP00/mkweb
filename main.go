@@ -1,6 +1,6 @@
 package main
 
-import "mkweb/cmd"
+import "github.com/OctaEDLP00/mkweb/cmd"
 
 func main() {
 	cmd.Execute()

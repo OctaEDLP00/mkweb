@@ -25,7 +25,7 @@ jobs:
               out="dist/mkweb-${TAG}-${os}-${arch}"
               [ "$os" = windows ] && out="${out}.exe"
               GOOS=$os GOARCH=$arch go build \
-                -ldflags "-X mkweb/internal/config.Version=${TAG}" \
+                -ldflags "-X github.com/OctaEDLP00/mkweb/internal/config.Version=${TAG}" \
                 -o "$out" .
             done
           done

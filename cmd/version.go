@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"mkweb/internal/config"
+	"github.com/OctaEDLP00/mkweb/internal/config"
 )
 
 var versionCmd = &cobra.Command{

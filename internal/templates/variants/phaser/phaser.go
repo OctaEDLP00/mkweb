@@ -3,8 +3,8 @@ package phaser
 import (
 	"embed"
 
-	"mkweb/internal/templates"
-	"mkweb/internal/templates/variants"
+	"github.com/OctaEDLP00/mkweb/internal/templates"
+	"github.com/OctaEDLP00/mkweb/internal/templates/variants"
 )
 
 //go:embed js ts

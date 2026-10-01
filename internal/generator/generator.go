@@ -5,11 +5,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"mkweb/internal/templates"
-	"mkweb/internal/templates/variants"
-	_ "mkweb/internal/templates/variants/phaser"
-	_ "mkweb/internal/templates/variants/vanilla"
-	"mkweb/internal/ui"
+	"github.com/OctaEDLP00/mkweb/internal/templates"
+	"github.com/OctaEDLP00/mkweb/internal/templates/variants"
+	_ "github.com/OctaEDLP00/mkweb/internal/templates/variants/phaser"
+	_ "github.com/OctaEDLP00/mkweb/internal/templates/variants/vanilla"
+	"github.com/OctaEDLP00/mkweb/internal/ui"
 )
 
 // Generate crea la estructura de directorios y archivos del proyecto.

@@ -13,7 +13,7 @@ import (
 	"strings"
 	"text/template"
 
-	"mkweb/internal/templates"
+	"github.com/OctaEDLP00/mkweb/internal/templates"
 )
 
 // Los dotfiles (.editorconfig, .gitignore) se nombran explícitos porque
