@@ -1,7 +1,9 @@
 {
   "name": "{{.ProjectName}}",
-{{if .PackageManager}}  "packageManager": "{{.PackageManager}}",
-{{end}}  "private": true,
+{{if .PackageManager}}  
+  "packageManager": "{{.PackageManager}}",
+{{end}}  
+  "private": true,
   "version": "0.0.0",
   "description": "",
   "type": "module",
