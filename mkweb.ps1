@@ -294,7 +294,7 @@ function Set-ConfigFile {
 }
 '@ | Set-FileContent "tsconfig.json"
     }
-    else if ($Template -eq 'vanilla-ts') {
+    elseif ($Template -eq 'vanilla-ts') {
       @'
 {
   "compilerOptions": {
