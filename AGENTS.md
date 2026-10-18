@@ -1,7 +1,8 @@
 # AGENTS.md — mkweb-go-cli
 
 CLI en Go (usando Cobra) que genera proyectos web. Spec de arquitectura en `SPEC.md`;
-comportamiento de referencia en `./mkweb.sh`.
+comportamiento de referencia en `./mkweb.sh` (y su port 1:1 a PowerShell,
+`mkweb.ps1`; su sintaxis se valida en CI junto a `bash -n`).
 
 ## Verificar
 
@@ -16,10 +17,12 @@ go test ./...    # hoy no hay tests; hay skills go en skills-lock.json si agreg�
 
 ## Arquitectura
 
-`main.go` → `cmd/` (Cobra: `create`, `list`, `version`; `help`/`completion` las da Cobra)
-→ `internal/templates` (registry) → `internal/generator` (escribe archivos)
-→ `internal/ui` (mensajes/estilos/prompts), `internal/config` (versión, defaults),
-`internal/pm` (gestores: validar, versión instalada, `install`).
+→ `main.go` → `cmd/` (Cobra: `create`, `list`, `version`; `help`/`completion` las da Cobra)
+→ `internal/templates` (registry)
+→ `internal/generator` (escribe archivos)
+→ `internal/ui` (mensajes/estilos/prompts),
+→ `internal/config` (versión, defaults),
+→ `internal/pm` (gestores: validar, versión instalada, `install`).
 
 ## Plantillas (zona de mayor riesgo)
 

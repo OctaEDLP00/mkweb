@@ -21,13 +21,21 @@ También hay binarios precompilados en la pestaña Releases del repo
 
 ## Alternativa shell
 
-`mkweb.sh` es la versión original en Bash, con las mismas 4 plantillas.
-Sirve si no querés compilar Go:
+`mkweb.sh` (Bash) y `mkweb.ps1` (PowerShell) son ports 1:1 del CLI, con las
+mismas 4 plantillas. Sirven si no querés compilar Go:
 
 ```sh
+# Bash (requiere bash; la variantes phaser usan GNU find)
 ./mkweb.sh -t vanilla-ts -n mi-app
 ./mkweb.sh -t phaser --name my-game
 ./mkweb.sh                        # interactivo (pregunta plantilla y nombre)
+```
+
+```powershell
+# PowerShell 7+ (pwsh); en Windows también corre en Windows PowerShell 5.1
+./mkweb.ps1 -t vanilla-ts -n mi-app
+./mkweb.ps1 -t phaser --name my-game
+./mkweb.ps1                       # interactivo (pregunta plantilla y nombre)
 ```
 
 ## Uso

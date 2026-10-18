@@ -23,3 +23,5 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - run: bash -n mkweb.sh
+      - name: PowerShell syntax check
+        run: pwsh -NoProfile -Command '[void][scriptblock]::Create((Get-Content -Raw mkweb.ps1))'
