@@ -677,7 +677,7 @@ function Invoke-ProjectGenerator {
   New-ProjectDirectory -Context $Context
   $files = Get-ProjectSourceFiles -Context $Context
   Write-ProjectFiles -Context $Context -Files $files
-  Write-LogMessage success "Project '$($Context.Name)' created with template $($Context.Template)"
+  Write-LogMessage success "Project '$($Context.Name)' created with template $($Context.Template.Name)"
 }
 
 function Invoke-PackageManagerInstall {
