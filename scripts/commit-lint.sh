@@ -65,7 +65,7 @@ info() { echo -e "${cyan}[i]${reset} $1"; }
 debug() { echo -e "${cyan}[🛠️]${reset} $1"; }
 
 ctrl_c() {
-  info "\n${yellow}[*]${reset}${white} Saliendo...${reset}"
+  info "\n${yellow}[*]${reset}${white} Exit...${reset}"
   tput cnorm 2>/dev/null || true
   exit 0
 }
